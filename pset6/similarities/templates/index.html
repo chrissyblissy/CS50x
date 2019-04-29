@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div class="col">
+        <form action="/compare" enctype="multipart/form-data" method="post">
+
+            Input the 2 files you wish to compare:<br>
+            <input name = "file1" type = "file" value = "file1">
+            <input name = "file2" type = "file" value = "file2"><br>
+
+            What would you like to compare?<br>
+            <input name = "algorithm" type = "radio" value = "lines"> Lines<br>
+            <input name = "algorithm" type = "radio" value = "sentences"> Sentences<br>
+            <input name = "algorithm" type = "radio" value = "substrings"> Substrings
+
+
+            <input name = "length" type = "number">  Enter a size of substring<br>
+
+            <input type="submit" value="Compare">
+            <!-- TODO -->
+
+        </form>
+    </div>
+
+{% endblock %}
