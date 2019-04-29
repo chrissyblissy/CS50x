@@ -1,0 +1,15 @@
+h1,
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container-fluid {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+}
+
+
